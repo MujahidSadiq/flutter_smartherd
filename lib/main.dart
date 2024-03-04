@@ -1,26 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_smartherd/app_screen/first_screen.dart';
 
-void main() {
-  runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'My Flutter Application',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('My first App'),
-        ),
-        body: const Material(
-          color: Colors.lightBlueAccent,
-          child: Center(
-            child: Text(
-              'hello flutter ',
-              textDirection: TextDirection.ltr,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 40.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
-      )));
-}
+void main() => runApp(const MyFlutterApp());   
+/*use of function expression */
+
+
+/*
+     when this statement is called it is going 
+     to the class and call build method 
+     in response build method return materialAp widget .on the screen we get materilaApp
+     widget . */
+    
+
+// organizing flutter code
+
+/* make another file for MyFlutterApp link with main.dart by importing its name */
