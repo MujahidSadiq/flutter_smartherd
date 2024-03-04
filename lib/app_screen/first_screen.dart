@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+import 'dart:math';
 
+import 'package:flutter/material.dart';
 
 class MyFlutterApp extends StatelessWidget {
   const MyFlutterApp({super.key});
@@ -13,13 +14,13 @@ class MyFlutterApp extends StatelessWidget {
           appBar: AppBar(
             title: const Text('My first App'),
           ),
-          body: const Material(
+          body: Material(
             color: Colors.lightBlueAccent,
             child: Center(
               child: Text(
-                'hello flutter ',
+                generateLuckyNumber(),
                 textDirection: TextDirection.ltr,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 40.0,
                   fontWeight: FontWeight.bold,
@@ -27,7 +28,15 @@ class MyFlutterApp extends StatelessWidget {
               ),
             ),
           ),
-        )
-        );
+        ));
+  }
+
+  /*add this logic declare this function in the class , and invoke this widget 
+  in the text widget . 
+   */
+  String generateLuckyNumber() {
+    var random = Random();
+    int luckyNumber = random.nextInt(10);
+    return 'your lucky number is $luckyNumber';
   }
 }
