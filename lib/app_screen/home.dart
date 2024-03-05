@@ -15,7 +15,7 @@ class Home extends StatelessWidget {
         // height: 100.0,
         // margin: EdgeInsets.all(15.0 ),  // or use only(left:15.0,top:15.0) as
         // padding: EdgeInsets.all(15.0),
-        child: Text(
+        child: const Text(
           'flight ',
           textDirection: TextDirection.ltr,
           style: TextStyle(
