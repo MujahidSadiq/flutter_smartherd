@@ -11,7 +11,7 @@ void main() {
           appBar: AppBar(
             title: const Text('long list '),
           ),
-          body:  getListView(),
+          body: getListView(),
         )),
   );
 }
